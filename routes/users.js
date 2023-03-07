@@ -43,7 +43,7 @@ router.post('/login', function(req, res, next) {
     res.status(201).json({name: foundUser.name, id: foundUser.id})
   } 
   else {
-    res.status(401).json("Incorrect password or username")
+    res.status(401).json("Incorrect username or password! Try again!")
   }
 });
 
