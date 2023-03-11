@@ -33,8 +33,7 @@ router.post('/', function(req, res, next) {
     }
     let users = JSON.parse(data)    //sparar innehållet från filen i en ny users-lista
     newUser.id = users.length + 1;  //lägger till ny användare i users-listan
-    let passwordToSave = crypto.SHA3(req.body.password).toString();
-   // let passwordToSave = crypto.AES.encrypt(req.body.password, salt).toString();
+    let passwordToSave = crypto.SHA3(req.body.password).toString();  //skapar lösenord som krypteras (SH3A vanligt att använda men även AES.encrypt)
     newUser.password = passwordToSave;
     users.push(newUser);
     fs.writeFile("users.json", JSON.stringify(users, null, 2), function(err) {  //skriver över json-filen med det nya innehållet
@@ -55,22 +54,17 @@ router.post('/login', function(req, res, next) {
     let users = JSON.parse(data);
     const foundUser = users.find(user => user.name === name);
     if(crypto.SHA3(password).toString() === foundUser.password) {
-   // if(password === crypto.AES.decrypt(foundUser.password, salt).toString(crypto.enc.Utf8)) {
       res.status(201).json({name: foundUser.name, id: foundUser.id})
     }
     else {
       res.status(401).json("Incorrect password or username")
     }
     return;
-  }
-  )
-  
-
-  
+  })
 });
 
 router.get('/test', function(req, res, next) {
-  res.send('test routen');
+  res.send('testroutern');
 });
 
 module.exports = router;

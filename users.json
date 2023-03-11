@@ -23,5 +23,10 @@
     "name": "liam",
     "id": 5,
     "password": "e414695af15b424332d97920cd9791fb6d84f811dd176ca2d34be9c8c9d9c57cc61ed2c13139a5a2af010a0cd3d6183ab16acf2c764fd800f9e9dd34bbd24cc9"
+  },
+  {
+    "name": "Hans",
+    "id": 6,
+    "password": "9624edca05add72538dc6cdc575ef70b644c57eee4394a36b51dc6c02cace46cf47c93722bbe72ca3ff6fd8c8a664637152e4af8af281b3dd4a57dbe78b66c7e"
   }
 ]
