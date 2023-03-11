@@ -28,5 +28,10 @@
     "name": "Hans",
     "id": 6,
     "password": "9624edca05add72538dc6cdc575ef70b644c57eee4394a36b51dc6c02cace46cf47c93722bbe72ca3ff6fd8c8a664637152e4af8af281b3dd4a57dbe78b66c7e"
+  },
+  {
+    "name": "Camilla",
+    "id": 7,
+    "password": "086f5e9ab824cc7c178646eec787bd5d599559e11298cbd090e08da551a51a5f26d8f045d0d4d0b6ee83f8bd844b92b74e3899332ad5997da52eb82738e6423c"
   }
 ]
