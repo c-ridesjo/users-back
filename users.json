@@ -1,4 +1,27 @@
 [
-    {"id": 1, "name": "John", "likes": "blommor, hav och hundar"}
+  {
+    "id": 1,
+    "name": "John",
+    "likes": "blommor, hav och hundar"
+  },
+  {
+    "name": "Lisa",
+    "id": 2,
+    "password": "2587de9c0b1c6505690820fb6204f833a11473d4c7090dba28a51adac5365b005c91163e167dc610faaeb909188302fd38fe3890985cc9c2348745843e79edc4"
+  },
+  {
+    "name": "Lina",
+    "id": 3,
+    "password": "105616274d4b46e95146aa14754fba4bc1ca61038d168fe45502b18601d478afa33b1f69d015d28a73462d0e610a6f387b896331487c8cdca6fac9af731da40d"
+  },
+  {
+    "name": "Kurt",
+    "id": 4,
+    "password": "b18922e4ad782e124cce3be4bd8fd83227675abbc0b724abbbdde09efce36543e3172108754b76d0ae1503d1a22fdce164cc791d827655717cd84b5d17d54d15"
+  },
+  {
+    "name": "liam",
+    "id": 5,
+    "password": "e414695af15b424332d97920cd9791fb6d84f811dd176ca2d34be9c8c9d9c57cc61ed2c13139a5a2af010a0cd3d6183ab16acf2c764fd800f9e9dd34bbd24cc9"
+  }
 ]
-   

@@ -26,18 +26,18 @@ router.get('/:userId', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  let newUser = { name: req.body.name };
-  fs.readFile("users.json", function(err, data){
+  let newUser = { name: req.body.name };    //skapar ny användare
+  fs.readFile("users.json", function(err, data){  //hämtar filen users.json 
     if(err) {
       console.log(err)
     }
-    let users = JSON.parse(data)
-    newUser.id = users.length + 1;
+    let users = JSON.parse(data)    //sparar innehållet från filen i en ny users-lista
+    newUser.id = users.length + 1;  //lägger till ny användare i users-listan
     let passwordToSave = crypto.SHA3(req.body.password).toString();
    // let passwordToSave = crypto.AES.encrypt(req.body.password, salt).toString();
     newUser.password = passwordToSave;
     users.push(newUser);
-    fs.writeFile("users.json", JSON.stringify(users, null, 2), function(err) {
+    fs.writeFile("users.json", JSON.stringify(users, null, 2), function(err) {  //skriver över json-filen med det nya innehållet
       if(err) {
         console.log(err)
       }
